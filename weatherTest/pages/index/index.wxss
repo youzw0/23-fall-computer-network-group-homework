@@ -1,0 +1,102 @@
+/* pages/weather/weather.wxss */
+page {
+  background-color: #000000;
+  color: white;
+}
+ 
+.content {
+  position: relative;
+  font-family: 微软雅黑;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.today {
+  padding-top: 70rpx;
+  height: 50%;
+}
+
+.changecity {
+  position: absolute;
+  left: 50rpx;
+  font-size: 100rpx;
+}
+ 
+.temp {
+  margin-top: 100rpx;
+  font-size: 180rpx;
+  text-align: center;
+}
+ 
+.city {
+  font-size: 60rpx;
+  text-align: center;
+  margin-top: 20rpx;
+  margin-right: 10rpx;
+}
+ 
+.weather {
+  line-height:80rpx;
+  font-size: 50rpx;
+  text-align: center;
+  margin-top: 30rpx;
+}
+
+.info {
+  line-height:80rpx;
+  font-size: 50rpx;
+  text-align: center;
+  margin-top: 10rpx;
+}
+
+.container{
+  position: absolute;
+  left: 30rpx;
+  bottom: 50rpx;
+}
+
+.more {
+  display: flex;
+  background-color: rgba(71, 71, 71, 0.5);
+  width: 680rpx;
+  height: 230rpx;
+  border-radius: 30rpx;
+  align-self: center;
+  position: relative;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tomweather {
+  position: absolute;
+  font-size: 40rpx;
+  top: 30rpx;
+  left: 30rpx;
+}
+
+.tomtemp {
+  position: absolute;
+  font-size: 40rpx;
+  top: 30rpx;
+  right: 30rpx;
+}
+
+.seemore {
+  background-color: rgba(63, 63, 63, 0.726);
+  width: 640rpx;
+  height: 100rpx;
+  margin-top: 75rpx;
+  margin-left: 20rpx;
+  border-radius: 30rpx;
+  position: relative;
+}
+
+.seemoretext {
+  font-size: 45rpx;
+  position: absolute;
+  top: 18rpx;
+  align-self: center;
+  left: 165rpx;
+}

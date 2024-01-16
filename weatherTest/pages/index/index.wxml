@@ -1,0 +1,38 @@
+<!--pages/weather/weather.wxml-->
+<view class="cotent">
+  <view class="today">
+    <view class="changecity" bind:tap="toCities">+</view>
+    <view class="city" style="width: 453rpx; height: 78rpx; display: block; box-sizing: border-box; position: relative; left: 149rpx; top: 9rpx">{{city}}</view>
+    <view class="temp" style="position: relative; left: 0rpx; top: -3rpx">
+      {{temp}}
+      <text style="margin-top: 100rpx; font-size: 25px; text-align: center; ">℃</text>
+    </view>
+    <view class="weather" style="position: relative; left: 0rpx; top: -31rpx">
+      {{weather}}
+      <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;</text>
+      {{high}}°/{{low}}°
+      <view>{{date}}</view>
+    </view>
+    <view class="info">
+      <view>{{winddirection}}风（{{windpower}}级）</view>
+      <view>湿度：{{humidity}}%</view>
+    </view>
+  </view>
+  <view class="container">
+    <view class="more">
+      <view class="tomweather">
+        明天
+        <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;</text>
+        {{tomweather}}
+      </view>
+      <view class="tomtemp">
+        {{tomhigh}}°/{{tomlow}}°
+      </view>
+      <view class="seemore" bind:tap="toRecent">
+        <view class="seemoretext">
+          查看近日天气
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
